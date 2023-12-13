@@ -1,0 +1,92 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #555;
+        padding: 10px;
+    }
+
+    nav a {
+        color: #fff;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid #ffffff;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #555;
+        color: white;
+    }
+
+    a {
+        margin-right: 10px;
+        text-decoration: none;
+    }
+</style>
+<header>
+    <h1>add User</h1>
+</header>
+ <nav>
+
+    <a href="indexUser.php">User View</a>
+</nav>
+
+<form name="form1" method="post" action="ajoutUser_action.php">
+    <table width="42%" border="1">
+        <tr>
+            <td width="37%">User ID</td>
+            <td width="63%"><input name="id" type="number" id="id"></td>
+        </tr>
+        <tr>
+            <td>Nom </td>
+            <td><input name="nom" type="text" id="nom"></td>
+        </tr>
+        <tr>
+            <td>Prenom </td>
+            <td><input name="prenom" type="text" id="prenom"></td>
+        </tr>
+        <tr>
+            <td>Email </td>
+            <td><input name="email" type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>mot de passe </td>
+            <td><input name="mot2pass" type="password" id="mot2pass"></td>
+        </tr>
+        <tr>
+            <td>Role </td>
+            <td><input name="role" type="text" id="role"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="Submit" value="Enregistrer"></td>
+        </tr>
+    </table>
+</form>

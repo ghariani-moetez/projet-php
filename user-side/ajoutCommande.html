@@ -1,0 +1,112 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #555;
+        padding: 10px;
+    }
+
+    nav a {
+        color: #fff;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid #ffffff;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #555;
+        color: white;
+    }
+
+    a {
+        margin-right: 10px;
+        text-decoration: none;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une Commande</title>
+</head>
+<body>
+    <header>
+        <h1>add Commande</h1>
+    </header>
+     <nav>
+        <a href="indexCommande.php">Commande View</a>
+        <a href="rechercherCommande.html">search Commande</a>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome to casanova</h2>
+
+
+<form action="ajoutCommande_action.php" method="post">
+<table>
+    <tr>
+        <td>    <label for="idCommande">ID Commande:</label></td>
+        <td>    <input type="text" id="idCommande" name="idCommande" required><br></td>
+    </tr>
+    <tr>
+        <td>   <label for="idClient">ID Client:</label></td>
+        <td>    <input type="text" id="idClient" name="idClient" required><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="dateCommande">Date Commande:</label></td>
+        <td> <input type="date" id="dateCommande" name="dateCommande" required><br></td>
+    </tr>
+    <tr>
+        <td>    <label for="etatCommande">Etat Commande:</label></td>
+        <td>   <input type="text" id="etatCommande" name="etatCommande" required><br></td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Ajouter"></td>
+    </tr>
+</table>
+
+
+
+ 
+
+   
+
+
+ 
+
+    
+</form>
+
+</body>
+</html>

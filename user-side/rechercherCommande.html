@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ffffff;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #555;
+            color: white;
+        }
+
+        a {
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>search Commande</h1>
+    </header>
+     <nav>
+    
+        <a href="indexCommande.php">Commande View</a>
+        <a href="ajoutCommande.html">add Commande</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
+    <div>
+        <h2>Welcome to casanova</h2>
+    </div>
+    
+
+    <form action="rechercherCommande.php" method="get">
+        <table>
+            <tr>
+                <td><label for="criteria">Search Criterion:</label>
+                    <select name="criteria" id="criteria">
+                        <option value="idCommande">Commande ID</option>
+                        <option value="idClient">Client ID</option>
+                        <option value="dateComande">Commande Date</option>
+                        <option value="etatCommande">Commande State</option>
+                    </select></td>
+                <td> <label for="value">Search Value:</label>
+                    <input type="text" name="value" id="value" required>
+            </td>
+            </tr>
+            <tr><td>  
+                <button type="submit">Search</button></td></tr>
+        </table>
+        
+
+     
+    </form>
+</body>
+</html>
